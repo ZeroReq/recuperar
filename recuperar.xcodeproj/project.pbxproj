@@ -13,6 +13,7 @@
 		22BCA535265F369E00AC5F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BCA533265F369E00AC5F54 /* Main.storyboard */; };
 		22BCA537265F369F00AC5F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BCA536265F369F00AC5F54 /* Assets.xcassets */; };
 		22BCA53A265F369F00AC5F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BCA538265F369F00AC5F54 /* LaunchScreen.storyboard */; };
+		22E116332668FE6E00AC9FE4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E116322668FE6E00AC9FE4 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		22BCA536265F369F00AC5F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22BCA539265F369F00AC5F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22BCA53B265F369F00AC5F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E116322668FE6E00AC9FE4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				22BCA52D265F369E00AC5F54 /* AppDelegate.swift */,
 				22BCA52F265F369E00AC5F54 /* SceneDelegate.swift */,
 				22BCA531265F369E00AC5F54 /* ViewController.swift */,
+				22E116322668FE6E00AC9FE4 /* LoginViewController.swift */,
 				22BCA533265F369E00AC5F54 /* Main.storyboard */,
 				22BCA536265F369F00AC5F54 /* Assets.xcassets */,
 				22BCA538265F369F00AC5F54 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E116332668FE6E00AC9FE4 /* LoginViewController.swift in Sources */,
 				22BCA532265F369E00AC5F54 /* ViewController.swift in Sources */,
 				22BCA52E265F369E00AC5F54 /* AppDelegate.swift in Sources */,
 				22BCA530265F369E00AC5F54 /* SceneDelegate.swift in Sources */,
