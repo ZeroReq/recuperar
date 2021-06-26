@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Inicio View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Qjm-Lz-jy8">
             <objects>
-                <viewController id="BhE-0P-c8M" customClass="InicioViewController" customModule="recuperar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BhE-0P-c8M" customClass="LoginViewController" customModule="recuperar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2qj-zf-ZDx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@ Ingrese su correo</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sT-HX-dBM">
                                         <rect key="frame" x="35" y="49" width="344" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYR-6a-ITb">
                                         <rect key="frame" x="20" y="113" width="374" height="24"/>
@@ -64,7 +64,7 @@ Ingrese su correo</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="112-XQ-dJh">
                                         <rect key="frame" x="35" y="152" width="344" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -93,6 +93,9 @@ Ingrese su correo</string>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
                                 <state key="normal" title="Iniciar Sesión"/>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BhE-0P-c8M" eventType="touchUpInside" id="Ewa-aT-77a"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amo-74-892">
                                 <rect key="frame" x="0.0" y="750.5" width="414" height="43"/>
@@ -126,7 +129,7 @@ Ingrese su correo</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Regístrate"/>
                                 <connections>
-                                    <segue destination="dVR-bQ-HAL" kind="show" id="8I6-g7-wYx"/>
+                                    <segue destination="dVR-bQ-HAL" kind="show" id="KZy-hJ-IN0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -158,16 +161,27 @@ Ingrese su correo</string>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Vqs-wh-m95"/>
+                    <connections>
+                        <outlet property="email" destination="7sT-HX-dBM" id="2Jt-Jl-1H2"/>
+                        <outlet property="emailText" destination="7sT-HX-dBM" id="uDg-9P-cFZ"/>
+                        <outlet property="loginButton" destination="Ypy-ff-WjH" id="f34-lr-B2q"/>
+                        <outlet property="password" destination="112-XQ-dJh" id="B4d-vu-mrx"/>
+                        <outlet property="passwordText" destination="112-XQ-dJh" id="yI3-CO-boR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAN-6K-YRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="1at-R6-ysw"/>
+                <tapGestureRecognizer id="1at-R6-ysw">
+                    <connections>
+                        <action selector="TapToClose:" destination="BhE-0P-c8M" id="CBs-vs-SdX"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-404.34782608695656" y="269.19642857142856"/>
         </scene>
-        <!--Registro View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="Iia-8r-HA8">
             <objects>
-                <viewController id="dVR-bQ-HAL" customClass="RegistroViewController" customModule="recuperar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dVR-bQ-HAL" customClass="RegisterViewController" customModule="recuperar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9G9-82-21D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +228,7 @@ cuenta</string>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="254" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efy-AY-Ln1">
                                         <rect key="frame" x="35" y="255" width="344" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ral-QB-Bg2">
                                         <rect key="frame" x="20" y="319" width="374" height="24"/>
@@ -225,7 +239,7 @@ cuenta</string>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcA-F2-AgP">
                                         <rect key="frame" x="35" y="358" width="344" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de Nacimiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olI-y7-OB4">
                                         <rect key="frame" x="20" y="422" width="184.5" height="24"/>
@@ -298,6 +312,9 @@ cuenta</string>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
                                 <state key="normal" title="Registrar cuenta"/>
+                                <connections>
+                                    <action selector="registerButtonAction:" destination="dVR-bQ-HAL" eventType="touchUpInside" id="N5k-9j-ZZh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Km-Ju-zG6"/>
@@ -319,15 +336,73 @@ cuenta</string>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="RVp-7Z-v3e"/>
+                    <connections>
+                        <outlet property="emailText" destination="efy-AY-Ln1" id="Fpq-Nx-ouW"/>
+                        <outlet property="passwordText" destination="PcA-F2-AgP" id="h15-Ky-TpP"/>
+                        <outlet property="registerButton" destination="WZM-Cl-UKn" id="mgf-uS-EdC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gp-oe-cWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Wfg-s2-GYw">
                     <connections>
-                        <action selector="TapToClose:" destination="dVR-bQ-HAL" id="H7e-es-chq"/>
+                        <action selector="TapToClose:" destination="dVR-bQ-HAL" id="7i9-8Q-cIK"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="515.94202898550725" y="691.74107142857144"/>
+            <point key="canvasLocation" x="516" y="626"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="G9I-fO-NP8">
+            <objects>
+                <viewController id="IY7-BB-09D" customClass="HomeViewController" customModule="recuperar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xff-pV-gF5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ch-aK-Sfw">
+                                <rect key="frame" x="35" y="84" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0U-Rw-dqK">
+                                <rect key="frame" x="45" y="115" width="324" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OK-nh-A1Q">
+                                <rect key="frame" x="120" y="186" width="174" height="40"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bxX-rI-ez7"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
+                                <state key="normal" title="Cerrar Sesión"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YmG-su-60g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s0U-Rw-dqK" firstAttribute="top" secondItem="1Ch-aK-Sfw" secondAttribute="bottom" constant="10" id="1Dh-uY-qNC"/>
+                            <constraint firstItem="9OK-nh-A1Q" firstAttribute="centerX" secondItem="xff-pV-gF5" secondAttribute="centerX" id="B6d-If-U3P"/>
+                            <constraint firstItem="YmG-su-60g" firstAttribute="trailing" secondItem="s0U-Rw-dqK" secondAttribute="trailing" constant="45" id="EtJ-2x-jRh"/>
+                            <constraint firstItem="9OK-nh-A1Q" firstAttribute="top" secondItem="s0U-Rw-dqK" secondAttribute="bottom" constant="50" id="Zdb-pI-b5L"/>
+                            <constraint firstItem="1Ch-aK-Sfw" firstAttribute="leading" secondItem="YmG-su-60g" secondAttribute="leading" constant="35" id="tSf-Gz-xfr"/>
+                            <constraint firstItem="s0U-Rw-dqK" firstAttribute="leading" secondItem="YmG-su-60g" secondAttribute="leading" constant="45" id="uev-k1-wtR"/>
+                            <constraint firstItem="1Ch-aK-Sfw" firstAttribute="top" secondItem="YmG-su-60g" secondAttribute="top" constant="40" id="yHT-3d-qGI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D2K-aW-Xa0"/>
+                    <connections>
+                        <outlet property="closeButton" destination="9OK-nh-A1Q" id="2CQ-W4-frJ"/>
+                        <outlet property="emailLabel" destination="s0U-Rw-dqK" id="4qe-kU-fQ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxf-Lx-YMm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="269"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -431,7 +506,7 @@ cuenta</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="549" y="12"/>
+            <point key="canvasLocation" x="516" y="-82"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fqL-o7-78V">

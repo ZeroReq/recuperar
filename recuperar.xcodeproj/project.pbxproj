@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222F187E26867777008AAC6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F187D26867777008AAC6F /* HomeViewController.swift */; };
+		222F189026868416008AAC6F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F188F26868416008AAC6F /* RegisterViewController.swift */; };
+		22871B0F26853B85001EFF7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22871B0E26853B85001EFF7A /* GoogleService-Info.plist */; };
 		22BCA52E265F369E00AC5F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCA52D265F369E00AC5F54 /* AppDelegate.swift */; };
 		22BCA530265F369E00AC5F54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCA52F265F369E00AC5F54 /* SceneDelegate.swift */; };
 		22BCA532265F369E00AC5F54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCA531265F369E00AC5F54 /* ViewController.swift */; };
@@ -14,9 +17,14 @@
 		22BCA537265F369F00AC5F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BCA536265F369F00AC5F54 /* Assets.xcassets */; };
 		22BCA53A265F369F00AC5F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BCA538265F369F00AC5F54 /* LaunchScreen.storyboard */; };
 		22E116332668FE6E00AC9FE4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E116322668FE6E00AC9FE4 /* LoginViewController.swift */; };
+		EB72CB092F55E20685A69F50 /* Pods_recuperar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B876D0F8C3253A47F4CA0CC /* Pods_recuperar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		178FC58CAF9B8640152FFD78 /* Pods-recuperar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recuperar.debug.xcconfig"; path = "Target Support Files/Pods-recuperar/Pods-recuperar.debug.xcconfig"; sourceTree = "<group>"; };
+		222F187D26867777008AAC6F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		222F188F26868416008AAC6F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		22871B0E26853B85001EFF7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22BCA52A265F369E00AC5F54 /* recuperar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recuperar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BCA52D265F369E00AC5F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22BCA52F265F369E00AC5F54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +34,8 @@
 		22BCA539265F369F00AC5F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22BCA53B265F369F00AC5F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22E116322668FE6E00AC9FE4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4CCA89AD05A0EC20F9EDE27B /* Pods-recuperar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recuperar.release.xcconfig"; path = "Target Support Files/Pods-recuperar/Pods-recuperar.release.xcconfig"; sourceTree = "<group>"; };
+		8B876D0F8C3253A47F4CA0CC /* Pods_recuperar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recuperar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB72CB092F55E20685A69F50 /* Pods_recuperar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DA437FF7F9BFE76B81F94A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				178FC58CAF9B8640152FFD78 /* Pods-recuperar.debug.xcconfig */,
+				4CCA89AD05A0EC20F9EDE27B /* Pods-recuperar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		22BCA521265F369E00AC5F54 = {
 			isa = PBXGroup;
 			children = (
 				22BCA52C265F369E00AC5F54 /* recuperar */,
 				22BCA52B265F369E00AC5F54 /* Products */,
+				0DA437FF7F9BFE76B81F94A7 /* Pods */,
+				5C392E66E66FAFB3D0889440 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,12 +84,23 @@
 				22BCA52F265F369E00AC5F54 /* SceneDelegate.swift */,
 				22BCA531265F369E00AC5F54 /* ViewController.swift */,
 				22E116322668FE6E00AC9FE4 /* LoginViewController.swift */,
+				222F187D26867777008AAC6F /* HomeViewController.swift */,
+				222F188F26868416008AAC6F /* RegisterViewController.swift */,
 				22BCA533265F369E00AC5F54 /* Main.storyboard */,
 				22BCA536265F369F00AC5F54 /* Assets.xcassets */,
 				22BCA538265F369F00AC5F54 /* LaunchScreen.storyboard */,
 				22BCA53B265F369F00AC5F54 /* Info.plist */,
+				22871B0E26853B85001EFF7A /* GoogleService-Info.plist */,
 			);
 			path = recuperar;
+			sourceTree = "<group>";
+		};
+		5C392E66E66FAFB3D0889440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B876D0F8C3253A47F4CA0CC /* Pods_recuperar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22BCA53E265F369F00AC5F54 /* Build configuration list for PBXNativeTarget "recuperar" */;
 			buildPhases = (
+				2489A288934975C705BE2758 /* [CP] Check Pods Manifest.lock */,
 				22BCA526265F369E00AC5F54 /* Sources */,
 				22BCA527265F369E00AC5F54 /* Frameworks */,
 				22BCA528265F369E00AC5F54 /* Resources */,
+				E01550B900128DDF3B812D33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22BCA53A265F369F00AC5F54 /* LaunchScreen.storyboard in Resources */,
+				22871B0F26853B85001EFF7A /* GoogleService-Info.plist in Resources */,
 				22BCA537265F369F00AC5F54 /* Assets.xcassets in Resources */,
 				22BCA535265F369E00AC5F54 /* Main.storyboard in Resources */,
 			);
@@ -135,13 +171,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2489A288934975C705BE2758 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-recuperar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E01550B900128DDF3B812D33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recuperar/Pods-recuperar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recuperar/Pods-recuperar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-recuperar/Pods-recuperar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22BCA526265F369E00AC5F54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222F187E26867777008AAC6F /* HomeViewController.swift in Sources */,
 				22E116332668FE6E00AC9FE4 /* LoginViewController.swift in Sources */,
 				22BCA532265F369E00AC5F54 /* ViewController.swift in Sources */,
+				222F189026868416008AAC6F /* RegisterViewController.swift in Sources */,
 				22BCA52E265F369E00AC5F54 /* AppDelegate.swift in Sources */,
 				22BCA530265F369E00AC5F54 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +367,7 @@
 		};
 		22BCA53F265F369F00AC5F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 178FC58CAF9B8640152FFD78 /* Pods-recuperar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +386,7 @@
 		};
 		22BCA540265F369F00AC5F54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CCA89AD05A0EC20F9EDE27B /* Pods-recuperar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

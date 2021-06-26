@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1080390655319-ieh2binipqu5bpon9v6nrsn2b23ab4iu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1080390655319-ieh2binipqu5bpon9v6nrsn2b23ab4iu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBeGt16CZsNEfznyIqRJfVn7kSdDhzUgGA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1080390655319</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.CaceresChamochumbi.recuperar</string>
+	<key>PROJECT_ID</key>
+	<string>proyecto-ios-jc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>proyecto-ios-jc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1080390655319:ios:67b28e08eb5c0b652d3212</string>
+</dict>
+</plist>
