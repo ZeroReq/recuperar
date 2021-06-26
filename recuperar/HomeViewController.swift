@@ -7,11 +7,12 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var emailLabel: UIView!
-    @IBOutlet weak var closeButton: UIView!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var closeButton: UIButton!
     
     private let email: String
     
@@ -26,10 +27,16 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Home"
+        title = "Inicio"
+        emailLabel.text = email
     }
     
     @IBAction func closeButtonAction (_ sender: Any){
-        
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popViewController(animated: true)
+        } catch {
+            //Error
+        }
     }
 }
